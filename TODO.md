@@ -1,0 +1,6 @@
+- [x] Identify the error: "string indices must be integers, not 'str'" in query_service.py
+- [x] Root cause: source_info stored as JSON string in ingestion, but retrieved as string in query
+- [x] Fix: Import json in query_service.py and parse source_info with json.loads
+- [x] Test: Verify json import works
+- [x] Test: Verify query_service imports successfully
+- [ ] Run the system and test a query to confirm fix (user can do this)
